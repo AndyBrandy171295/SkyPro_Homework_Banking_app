@@ -1,5 +1,5 @@
 def get_mask_account_card(card_number: str) -> str:
-    """Функция для маскировки номера карты"""
+    """Функция для маскировки номера карты."""
     alpha_part_of_mask_card = ""
     for char in card_number:
         if char.isalpha() or char == " ":
@@ -8,5 +8,5 @@ def get_mask_account_card(card_number: str) -> str:
 
 
 def get_date(full_date: str) -> str:
-    """Функция для, которая определяет дату в формате ДД.ММ.ГГГГ"""
+    """Функция для, которая определяет дату в формате ДД.ММ.ГГГГ."""
     return f"{full_date[8:10]}.{full_date[5:7]}.{full_date[:4]}"
