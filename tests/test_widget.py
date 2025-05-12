@@ -1,4 +1,5 @@
 from src.widget import get_date, get_mask_account_card
+import pytest
 
 
 @pytest.mark.parametrize(
@@ -16,4 +17,5 @@ def test_get_mask_account_card(value: str, expected: str) -> str:
 def test_get_date(full_date1: str) -> None:
     assert get_date(full_date1) == "11.03.2024"
 
+def test_get_date2(full_date2: str) -> None:
     assert get_date(full_date2) == "13.05.2025"

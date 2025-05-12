@@ -16,6 +16,8 @@ def test_sort_by_date(my_list_for_day_sort: list) -> list:
         {"id": 939719570, "state": "EXECUTED", "date": "2018-06-30T02:08:58.425572"},
     ]
 
+
+def test_sort_by_date2(my_list_for_day_sort2: list) -> list:
     assert sort_by_date(my_list_for_day_sort2) == [
         {"id": 594226727, "state": "CANCELED", "date": "2020-09-12T21:27:25.241689"},
         {"id": 615064591, "state": "CANCELED", "date": "2018-10-14T08:21:33.419441"},
