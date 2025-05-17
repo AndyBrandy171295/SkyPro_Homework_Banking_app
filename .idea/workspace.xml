@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44115ebb-61bc-46c1-a17e-4cf444c5327c" name="Changes" comment="add info in readme" />
+    <list default="true" id="44115ebb-61bc-46c1-a17e-4cf444c5327c" name="Changes" comment="add info in readme">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +70,7 @@
     "Python.processing.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/HW__generators",
+    "git-widget-placeholder": "#3 on feature/HW__generators",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/PythonProjects/Banking_app",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
@@ -143,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747490452076</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add info in readme">
+      <option name="closed" value="true" />
+      <created>1747502378692</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1747502378692</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
