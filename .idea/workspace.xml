@@ -5,7 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44115ebb-61bc-46c1-a17e-4cf444c5327c" name="Changes" comment="add info in readme">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/Scripts/black.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/black.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/Scripts/blackd.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/blackd.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/Scripts/coverage-3.13.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/coverage-3.13.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/Scripts/coverage.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/coverage.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/Scripts/coverage3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/coverage3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/Scripts/dmypy.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/dmypy.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/Scripts/flake8.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/flake8.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/Scripts/isort-identify-imports.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/isort-identify-imports.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/Scripts/isort.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/isort.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/Scripts/mypy.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/mypy.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/Scripts/mypyc.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/mypyc.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/Scripts/py.test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/py.test.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/Scripts/pycodestyle.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/pycodestyle.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/Scripts/pyflakes.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/pyflakes.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/Scripts/pytest.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/pytest.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/Scripts/stubgen.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/stubgen.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/Scripts/stubtest.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/stubtest.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorators.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,11 +87,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python tests.pytest in test_generators.py.executor": "Run",
+    "Python.decorators.executor": "Run",
     "Python.generators.executor": "Run",
     "Python.processing.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "#3 on feature/HW__generators",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "feacher/HW__decorators__11.2",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/PythonProjects/Banking_app",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
