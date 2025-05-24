@@ -2,22 +2,24 @@ from functools import wraps
 
 
 def log(filename=None):
+    """Декоратор-логгер, который записывает лог либо в файл, либо выводит на экран."""
     def decorator(function):
         @wraps(function)
         def wrapper(*args, **kwargs):
-            print(f"Функция {function.__name__} начала работу.")
-            result = function(*args, **kwargs)
-            for i in args:
-                if i <= 0:
-                    raise ValueError("Все аргументы должны быть положительными!")
-            for i in kwargs:
-                if i <= 0:
-                    raise ValueError("Все аргументы должны быть положительными!")
-            print(f"Функция {function.__name__} вывела результат.")
-            print(f"Функция {function.__name__} закончила работу.")
-            return result
+            try:
+                result = function(*args, **kwargs)
+                log_message = f"Вызов функции {function.__name__} с аргументами {args} и {kwargs}"
+            except Exception as e:
+                error_type = type(e).__name__
+            log_message = f"{function.__name__}: {error_type}. С аргументами {args} и {kwargs}"
+            result = None
+            if filename:
+                with open(filename, 'a', encoding='utf-8') as f:
+                    f.write(log_message + '\n')
+            else:
+                print(log_message)
+                return result
 
         return wrapper
-
     return decorator
 
