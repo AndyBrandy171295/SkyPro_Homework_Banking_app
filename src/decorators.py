@@ -7,6 +7,7 @@ def log(filename=None):
         @wraps(function)
         def wrapper(*args, **kwargs):
             result = None
+            error_type = None
             try:
                 result = function(*args, **kwargs)
                 log_message = f"Вызов функции {function.__name__} с аргументами {args} и {kwargs}"
