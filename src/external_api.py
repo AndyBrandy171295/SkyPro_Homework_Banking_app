@@ -1,8 +1,8 @@
 import json
 import os
-
 import requests
 from dotenv import load_dotenv
+
 
 load_dotenv()
 
@@ -11,8 +11,17 @@ with open("D:/PythonProjects/Banking_app/data/operations.json", encoding="utf-8"
     transaction = json.load(json_file)
 
 
+class CurrencyConversionError(Exception):
+    pass
+
+
+class InvalidAPIKey(Exception):
+    pass
+
+
 def sum_transactions(transaction: dict) -> float:
-    """Функция, которая принимает на вход транзакцию и возвращает сумму транзакции (amount) в рублях, тип данных — float"""
+    """Функция, которая принимает на вход транзакцию и возвращает сумму транзакции (amount) в рублях,
+    тип данных — float"""
     amount = float(transaction.get("amount", 0))
     currency = transaction.get("currency", "").upper()
 
@@ -21,7 +30,7 @@ def sum_transactions(transaction: dict) -> float:
 
     api_key = os.getenv("API_KEY")
     if not api_key:
-        raise IvalidAPIkey("Неверный ключ API")
+        raise InvalidAPIKey("Неверный ключ API")
 
     url = f"https://api.apilayer.com/exchangerates_data/latest?base={currency}"
     headers = {"apikey": api_key}

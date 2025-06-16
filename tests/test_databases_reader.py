@@ -21,9 +21,7 @@ def test_empty_read_transactions_from_xlsx(mock_read_excel, mock_open):
 
 @patch("builtins.open", new_callable=mock_open)
 def test_read_from_xlsx_file_not_found(open_mock):
-    mock_open.side_effect = FileNotFoundError(
-        "Файл не найден D:/PythonProjects/Banking_app/databases/transactions_excel.xlsx"
-    )
+    mock_open.side_effect = FileNotFoundError("Файл не найден D:/PythonProjects/Banking_app/databases/transactions_excel.xlsx")
     result = read_transaction_from_xlsx("file.xlsx")
 
     assert result == []
