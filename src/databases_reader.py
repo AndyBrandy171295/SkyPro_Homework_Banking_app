@@ -53,5 +53,5 @@ def read_transaction_from_xlsx(file_path: str) -> List[Dict]:
 
 
 if __name__ == "__main__":
-    print(read_transactions_from_csv("D:/PythonProjects/Banking_app/databases/transactions.csv"))
+    # print(read_transactions_from_csv("D:/PythonProjects/Banking_app/databases/transactions.csv"))
     # print(read_transaction_from_xlsx('D:/PythonProjects/Banking_ap/databases/transactions_excel.xlsx'))
