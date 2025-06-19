@@ -10,6 +10,7 @@ logging.basicConfig(level=logging.DEBUG,
 mask_card_logger = logging.getLogger('get_mask_card_number')
 mask_acc_logger = logging.getLogger('get_mask_account')
 
+
 def get_mask_card_number(card_number: str) -> str:
     """Функция показывает маску карты"""
     mask_card_logger.info('Запуск функции.')

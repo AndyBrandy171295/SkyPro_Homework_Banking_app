@@ -10,6 +10,7 @@ logging.basicConfig(level=logging.DEBUG,
 
 utils_logger = logging.getLogger('json_operation')
 
+
 def json_operation(json_path: str) -> list:
     '''Функция принимает на вход путь до JSON-файла и возвращает список словарей с данными о финансовых транзакциях'''
     try:
