@@ -22,16 +22,16 @@ def test_process_bank_search_empty(transactions):
 
 
 def test_process_bank_operation(transactions):
-    result = {'счет': 0}
+    result = {}
 
     assert process_bank_operation(transactions, ['счет']) == result
 
 def test_process_bank_operation_2_value(transactions):
-    result = {'счет': 0, 'Перевод': 1}
+    result = {'Перевод': 1}
 
     assert process_bank_operation(transactions, ['счет', 'Перевод']) == result
 
 def test_process_bank_operation_empty(transactions):
-    result = {}
+    result =  {}
 
     assert process_bank_operation(transactions, []) == result

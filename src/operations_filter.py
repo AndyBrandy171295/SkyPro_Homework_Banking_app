@@ -75,7 +75,7 @@ if __name__ == "__main__":
             "to": "Счет 14211924144426031657",
         },
     ]
-    qwer1 = []
+    qwer1 = ["счет", "Перевод"]
 
     # print(process_bank_search(qwer, 'счет'))
     print(process_bank_operation(qwer, qwer1))
