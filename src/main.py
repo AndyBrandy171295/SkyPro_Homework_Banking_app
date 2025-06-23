@@ -3,11 +3,12 @@ from src.masks import get_mask_account, get_mask_card_number
 from src.operations_filter import process_bank_search
 from src.processing import filter_by_state, sort_by_date
 from src.utils import json_operation
+from src.widget import get_date, get_mask_account_card
 
 
-JSON_PATH = r"D:\PythonProjects\Banking_app\data\operations.json"
-CSV_PATH = r"D:\PythonProjects\Banking_app\databases\transactions.csv"
-XLSX_PATH = r"D:\PythonProjects\Banking_app\databases\transactions_excel.xlsx"
+JSON_PATH = r"..\data\operations.json"
+CSV_PATH = r"..\databases\transactions.csv"
+XLSX_PATH = r"..\databases\transactions_excel.xlsx"
 
 
 def load_transaction(file_path: str) -> list[dict]:
@@ -65,7 +66,7 @@ def apply_additional_filters(transactions: list[dict]) -> list[dict]:
     """Применение дополнительных фильтров по выбору пользователя"""
     if input("Отсортировать операции по дате? Да/Нет").lower() == "да":
         transactions = sort_by_date(transactions)
-        if input("Отсортировать по возрастанию или по убыванию?"):
+        if input("Отсортировать по возрастанию или по убыванию?").lower() == "по убыванию":
             transactions = sort_by_date(transactions, reverse=True)
 
     if input("Выводить только рублевые транзакции? Да/Нет").lower == "да":
@@ -87,21 +88,12 @@ def print_transaction(transactions: list[dict]):
         return "Не найдено ни одной транзакции, подходящей под ваши условия фильтрации"
 
     for transaction in transactions:
-        date = transaction.get("date", "")
+        date = get_date(transaction.get("date", ""))
         description = transaction.get("description", "")
-        from_ = transaction.get("from", "")
-        to_ = transaction.get("to", "")
-        amount = transaction.get("amount", "")
-        currency = transaction.get("currency", "")
-        if "Счет" in from_:
-            from_ = get_mask_account(from_)
-        else:
-            from_ = get_mask_card_number(from_)
-
-        if "Счет" in to_:
-            to_ = get_mask_account(to_)
-        else:
-            to_ = get_mask_card_number(to_)
+        from_ = get_mask_account_card(transaction.get("from", ""))
+        to_ = get_mask_account_card(transaction.get("to", ""))
+        amount = transaction.get("operationAmount").get("amount")
+        currency = transaction.get("operationAmount").get("currency").get("name")
 
         print(f"{date} {description}")
         if from_:
