@@ -1,5 +1,4 @@
 from src.databases_reader import read_transaction_from_xlsx, read_transactions_from_csv
-from src.masks import get_mask_account, get_mask_card_number
 from src.operations_filter import process_bank_search
 from src.processing import filter_by_state, sort_by_date
 from src.utils import json_operation
