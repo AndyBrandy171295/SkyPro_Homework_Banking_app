@@ -3,7 +3,7 @@ import logging
 
 
 logging.basicConfig(level=logging.DEBUG,
-                    format='%(acstime)s - %(name)s - %(levelname)s: %(message)s',
+                    format='%(asctime)s - %(name)s - %(levelname)s: %(message)s',
                     filename='D:/PythonProjects/Banking_app/logs/utils.log',
                     filemode='w',
                     encoding='utf-8')
